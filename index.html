@@ -3,339 +3,342 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Asghar | Academic Research Portfolio — Analytical Chemistry</title>
+  <title>Muhammad Asghar | Analytical Chemistry Portfolio</title>
   
-  <meta name="title" content="Muhammad Asghar | Academic Research Portfolio — Analytical Chemistry" />
-  <meta name="description" content="Academic research verification portfolio of Muhammad Asghar, BS Chemistry (Analytical Chemistry, UE Lahore). Seeking funded research-based Master's positions for Fall 2027." />
-  <meta name="author" content="Muhammad Asghar" />
-
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind CSS & Lucide Icons -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <script>
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
           colors: {
             brand: {
-              navy: '#0B192C',
-              dark: '#07101B',
-              surface: '#0F243E',
-              teal: '#00B4D8',
-              cyan: '#90E0EF',
-              slate: '#64748B',
-              card: '#F8FAFC',
-              border: '#E2E8F0'
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
             }
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace'],
           }
         }
       }
     }
   </script>
-
   <style>
-    .hero-grid {
-      background-size: 32px 32px;
-      background-image: 
-        linear-gradient(to right, rgba(0, 180, 216, 0.05) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(0, 180, 216, 0.05) 1px, transparent 1px);
-    }
-    .analytical-border {
-      border-left: 3px solid #00B4D8;
+    .glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
     }
   </style>
 </head>
-<body class="bg-white text-slate-800 font-sans antialiased selection:bg-brand-teal selection:text-white">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-teal-500 selection:text-white">
 
-  <!-- ==================== STICKY NAVIGATION ==================== -->
-  <header class="sticky top-0 z-50 bg-brand-navy/95 backdrop-blur-md border-b border-brand-surface/60 text-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-14">
-        
-        <a href="#home" class="flex items-center space-x-2 text-white font-semibold text-base tracking-tight hover:text-brand-cyan transition-colors">
-          <i data-lucide="flask-conical" class="w-4 h-4 text-brand-teal"></i>
-          <span>M. Asghar</span>
-          <span class="text-[11px] font-mono font-normal px-1.5 py-0.5 rounded bg-brand-surface border border-slate-700 text-brand-cyan">BS Chem '26</span>
+  <!-- TOP NOTIFICATION BANNER -->
+  <div class="bg-slate-900 text-slate-200 text-xs sm:text-sm py-2.5 px-4 border-b border-slate-800 text-center font-medium flex items-center justify-center gap-2">
+    <span class="w-2 h-2 rounded-full bg-teal-400 animate-ping"></span>
+    <span>Actively Seeking Funded Master's Supervision — <strong>Fall 2027</strong> Intake</span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 glass-card border-b border-slate-200/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="w-9 h-9 rounded-lg bg-teal-600 text-white flex items-center justify-center font-mono font-bold text-base shadow-sm group-hover:bg-teal-700 transition">
+          MA
+        </div>
+        <div>
+          <span class="block font-bold text-slate-900 leading-none">Muhammad Asghar</span>
+          <span class="text-[11px] font-mono text-slate-500">BS Analytical Chem '26</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-600">
+        <a href="#research-fit" class="hover:text-teal-600 transition">Research Fit</a>
+        <a href="#thesis" class="hover:text-teal-600 transition">Thesis & Data</a>
+        <a href="#skills" class="hover:text-teal-600 transition">Instrumentation</a>
+        <a href="#seminars" class="hover:text-teal-600 transition">Seminars & Projects</a>
+        <a href="#references" class="hover:text-teal-600 transition">References</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <!-- DIRECT NATIVE CV DOWNLOAD BUTTON -->
+        <a href="Muhammad_Asghar_CV.pdf" download="Muhammad_Asghar_CV.pdf" class="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-lg shadow-sm hover:shadow transition">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          <span>Download CV</span>
         </a>
-
-        <nav class="hidden md:flex items-center space-x-5 text-xs font-medium">
-          <a href="#thesis" class="text-slate-300 hover:text-white transition-colors">Thesis & Verification</a>
-          <a href="#interests" class="text-slate-300 hover:text-white transition-colors">Interests</a>
-          <a href="#seminars" class="text-slate-300 hover:text-white transition-colors">Seminars & Projects</a>
-          <a href="#skills" class="text-slate-300 hover:text-white transition-colors">Methods & Skills</a>
-          <a href="#experience" class="text-slate-300 hover:text-white transition-colors">QC Experience</a>
-          <a href="#about" class="text-slate-300 hover:text-white transition-colors">About</a>
-          <a href="mailto:asgharmukhtair@gmail.com" class="px-3 py-1 rounded bg-brand-teal text-brand-navy font-semibold hover:bg-brand-cyan transition-colors tracking-wide">
-            Contact Me
-          </a>
-        </nav>
-
-        <button id="mobile-menu-btn" aria-label="Open Navigation Menu" class="md:hidden p-1.5 rounded text-slate-300 hover:text-white">
-          <i data-lucide="menu" id="menu-icon" class="w-5 h-5"></i>
-        </button>
       </div>
-    </div>
-
-    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800 bg-brand-navy px-4 pt-2 pb-5 space-y-2 text-xs font-medium">
-      <a href="#thesis" class="block py-1.5 text-slate-300">Thesis & Verification</a>
-      <a href="#interests" class="block py-1.5 text-slate-300">Research Interests</a>
-      <a href="#seminars" class="block py-1.5 text-slate-300">Seminars & Projects</a>
-      <a href="#skills" class="block py-1.5 text-slate-300">Technical Skills</a>
-      <a href="#experience" class="block py-1.5 text-slate-300">QC Experience</a>
-      <a href="#about" class="block py-1.5 text-slate-300">Background</a>
-      <a href="mailto:asgharmukhtair@gmail.com" class="block text-center py-2 rounded bg-brand-teal text-brand-navy font-semibold">Contact Me</a>
     </div>
   </header>
 
-  <!-- ==================== FRONT-LOADED VERIFICATION HERO (ABOVE THE FOLD) ==================== -->
-  <section id="home" class="relative bg-brand-dark text-white pt-8 pb-10 border-b border-slate-800 hero-grid">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-      
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div>
-          <div class="inline-flex items-center space-x-2 bg-brand-surface border border-slate-700/80 px-2.5 py-0.5 rounded-full text-[11px] font-mono text-brand-cyan mb-2">
-            <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>Seeking Funded Master's Supervision — Fall 2027</span>
+  <!-- HERO SECTION -->
+  <section id="home" class="relative py-16 sm:py-20 lg:py-24 border-b border-slate-200/60 bg-gradient-to-b from-white via-slate-50/50 to-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-semibold">
+            <i data-lucide="flask-conical" class="w-3.5 h-3.5 text-teal-600"></i>
+            Analytical Chemistry Graduate Candidate
           </div>
-
-          <h1 class="text-2xl sm:text-4xl font-bold tracking-tight text-white">
-            Muhammad Asghar
+          
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            Rigorous Bench Methods & Quantitative Analytical Chemistry.
           </h1>
+          
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+            BS Chemistry graduate from the <strong>University of Education Lahore</strong> with specialized bench training in <strong>HPLC, Atomic Absorption (AAS), UV-Vis calibration</strong>, and complex sample preparation. Dedicated to rigorous data validation and instrumental precision.
+          </p>
 
-          <div class="text-xs sm:text-sm font-semibold text-brand-teal mt-0.5">
-            BS Chemistry (Analytical Chemistry) • University of Education Lahore, Pakistan
+          <!-- KEY METRICS -->
+          <div class="grid grid-cols-3 gap-4 pt-2">
+            <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm">
+              <span class="block text-2xl font-bold text-slate-900 font-mono">BS</span>
+              <span class="text-xs text-slate-500 font-medium">Analytical Chem ('26)</span>
+            </div>
+            <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm">
+              <span class="block text-2xl font-bold text-teal-600 font-mono">R² &gt; 0.999</span>
+              <span class="text-xs text-slate-500 font-medium">Calibration Fidelity</span>
+            </div>
+            <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm">
+              <span class="block text-2xl font-bold text-slate-900 font-mono">10+</span>
+              <span class="text-xs text-slate-500 font-medium">Seminars & Projects</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="Muhammad_Asghar_CV.pdf" download="Muhammad_Asghar_CV.pdf" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-medium text-sm px-5 py-2.5 rounded-lg shadow-sm transition">
+              <i data-lucide="file-text" class="w-4 h-4"></i>
+              Get Full Academic CV (PDF)
+            </a>
+            <a href="mailto:asgharmukhtair@gmail.com?subject=Master's%20Supervision%20Inquiry%20-%20Muhammad%20Asghar" class="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 font-medium text-sm px-5 py-2.5 rounded-lg border border-slate-300 shadow-sm transition">
+              <i data-lucide="mail" class="w-4 h-4 text-slate-500"></i>
+              Contact Directly
+            </a>
           </div>
         </div>
 
-        <!-- Direct Actions -->
-        <div class="flex items-center gap-2.5 flex-wrap">
-          <a href="CV.pdf" download="Muhammad_Asghar_CV.pdf" class="inline-flex items-center px-4 py-2 rounded text-xs font-semibold bg-brand-teal text-brand-navy hover:bg-brand-cyan transition-colors uppercase tracking-wider font-mono shadow-sm">
-            <i data-lucide="file-down" class="w-3.5 h-3.5 mr-1.5"></i> Download CV
-          </a>
-          <a href="#thesis" class="inline-flex items-center px-3.5 py-2 rounded text-xs font-semibold bg-brand-surface border border-slate-700 text-slate-200 hover:text-white hover:bg-slate-800 transition-colors uppercase tracking-wider font-mono">
-            <i data-lucide="microscope" class="w-3.5 h-3.5 mr-1.5 text-brand-cyan"></i> View Research
-          </a>
-          <a href="mailto:asgharmukhtair@gmail.com?subject=Graduate%20Supervision%20Inquiry%20-%20Muhammad%20Asghar" class="inline-flex items-center px-3.5 py-2 rounded text-xs font-semibold bg-brand-surface border border-slate-700 text-slate-200 hover:text-white hover:bg-slate-800 transition-colors uppercase tracking-wider font-mono">
-            <i data-lucide="mail" class="w-3.5 h-3.5 mr-1.5 text-brand-teal"></i> Contact Me
-          </a>
-        </div>
-      </div>
+        <!-- QUICK PROFILE SNAPSHOT CARD -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-2xl border border-slate-200/90 shadow-xl shadow-slate-200/50 p-6 sm:p-7 space-y-5">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+              <span class="text-xs font-mono uppercase tracking-wider font-semibold text-slate-400">Candidate Snapshot</span>
+              <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Verified Credentials
+              </span>
+            </div>
 
-      <!-- Specific Thesis Title Box (Above the Fold) -->
-      <div class="p-4 rounded-lg bg-brand-surface/90 border border-slate-700 shadow-md">
-        <div class="flex items-center justify-between gap-2 mb-1.5">
-          <div class="flex items-center space-x-2 text-[11px] font-mono uppercase tracking-wider text-brand-cyan font-semibold">
-            <i data-lucide="book-check" class="w-3.5 h-3.5 text-brand-teal"></i>
-            <span>Undergraduate Research Thesis (Jan – May 2026)</span>
+            <div class="space-y-3.5 text-sm">
+              <div class="flex items-start justify-between">
+                <span class="text-slate-500">Degree</span>
+                <span class="font-semibold text-slate-900 text-right">BS Chemistry (Analytical)</span>
+              </div>
+              <div class="flex items-start justify-between">
+                <span class="text-slate-500">Institution</span>
+                <span class="font-semibold text-slate-900 text-right">UE Lahore (DG Khan Campus)</span>
+              </div>
+              <div class="flex items-start justify-between">
+                <span class="text-slate-500">Intended Intake</span>
+                <span class="font-semibold text-teal-700 text-right">Fall 2027 (Funded MS)</span>
+              </div>
+              <div class="flex items-start justify-between">
+                <span class="text-slate-500">Primary Focus</span>
+                <span class="font-semibold text-slate-900 text-right">Chromatography & Spectrometry</span>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100">
+              <span class="text-xs font-semibold text-slate-600 block mb-2">Core Software & Reporting Tools:</span>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono font-medium">OriginPro</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono font-medium">ChemDraw</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono font-medium">LaTeX</span>
+                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-mono font-medium">MS Excel</span>
+              </div>
+            </div>
           </div>
-          <span class="text-[10px] font-mono bg-brand-navy px-2 py-0.5 rounded border border-slate-700 text-slate-300">Dept. of Chemistry, UE Lahore</span>
         </div>
-        <p class="text-xs sm:text-sm font-semibold text-white leading-snug">
-          "A Comprehensive Review and Analytical Evaluation of Chromatographic and Spectroscopic Methods for Heavy Metals and Bioactive Compounds in Local Medicinal Plant Extracts"
-        </p>
-        <div class="mt-2.5 flex flex-wrap gap-2 text-[11px] font-mono text-slate-300">
-          <span class="text-slate-400">Core Hands-On Training:</span>
-          <span class="text-brand-teal">HPLC (C18 Column Setup & Peak Integration)</span>
-          <span class="text-slate-500">•</span>
-          <span class="text-brand-teal">AAS & UV-Vis Multi-Point Calibration</span>
-          <span class="text-slate-500">•</span>
-          <span class="text-brand-teal">Acid Digestion & Solvent Partitioning</span>
-        </div>
-      </div>
 
+      </div>
     </div>
   </section>
 
-  <!-- ==================== THESIS DETAILS & BENCH TRAINING ==================== -->
-  <section id="thesis" class="py-10 bg-slate-50 border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="max-w-3xl mb-5">
-        <h2 class="text-[11px] font-mono uppercase tracking-widest text-brand-teal font-semibold">Primary Research</h2>
-        <p class="text-xl font-bold text-slate-900 tracking-tight mt-0.5">Thesis Work & Experimental Training</p>
+  <!-- SECTION 1: PROPOSED RESEARCH FIT / DIRECTIONS -->
+  <section id="research-fit" class="py-16 bg-white border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-teal-700 font-bold mb-2">Master's Research Direction</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Prospective Research Areas & Group Fit</h3>
+        <p class="text-slate-600 text-sm mt-2">Target research trajectories for Master's thesis supervision:</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        
-        <div class="bg-white rounded p-4 border border-slate-200 analytical-border shadow-sm">
-          <h3 class="text-xs font-bold uppercase tracking-wider font-mono text-slate-900 mb-2 flex items-center gap-1.5">
-            <i data-lucide="file-spreadsheet" class="w-3.5 h-3.5 text-brand-teal"></i> Method Synthesis & Figures of Merit
-          </h3>
-          <ul class="space-y-1.5 text-xs text-slate-700">
-            <li class="flex items-start">
-              <span class="font-mono text-brand-teal mr-1.5">▪</span>
-              <span><strong>Methods Evaluated:</strong> High-Performance Liquid Chromatography (HPLC), Thin-Layer Chromatography (TLC), Atomic Absorption Spectroscopy (AAS), and UV-Vis Spectrophotometry.</span>
-            </li>
-            <li class="flex items-start">
-              <span class="font-mono text-brand-teal mr-1.5">▪</span>
-              <span><strong>Comparative Parameters:</strong> Limits of Detection (LOD), Limits of Quantification (LOQ), linear dynamic range ($R^2$ regression), sensitivity, and matrix interferences in botanical extracts.</span>
-            </li>
-          </ul>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Fit 1 -->
+        <div class="p-6 rounded-xl border border-slate-200 bg-slate-50/50 hover:border-teal-300 hover:bg-white hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center mb-4">
+            <i data-lucide="layers" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base mb-2">Advanced Chromatography & Method Validation</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Development, optimization, and validation of reverse-phase HPLC methods for bioactive separation, pharmaceutical quality assurance, and determination of matrix interferences.
+          </p>
         </div>
 
-        <div class="bg-white rounded p-4 border border-slate-200 analytical-border shadow-sm">
-          <h3 class="text-xs font-bold uppercase tracking-wider font-mono text-slate-900 mb-2 flex items-center gap-1.5">
-            <i data-lucide="flask-conical" class="w-3.5 h-3.5 text-brand-teal"></i> Practical Bench Training
-          </h3>
-          <ul class="space-y-1.5 text-xs text-slate-700">
-            <li class="flex items-start">
-              <span class="font-mono text-brand-teal mr-1.5">▪</span>
-              <span><strong>HPLC Setup:</strong> Degassing mobile phase, isocratic/gradient solvent handling, C18 reverse-phase column maintenance, filtration (0.45 µm), and peak area quantification.</span>
-            </li>
-            <li class="flex items-start">
-              <span class="font-mono text-brand-teal mr-1.5">▪</span>
-              <span><strong>Elemental Analysis & Prep:</strong> Hot-plate wet acid digestion for botanical matrix breakdown, multi-point standard curve generation on AAS and UV-Vis spectrophotometers.</span>
-            </li>
-          </ul>
+        <!-- Fit 2 -->
+        <div class="p-6 rounded-xl border border-slate-200 bg-slate-50/50 hover:border-teal-300 hover:bg-white hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center mb-4">
+            <i data-lucide="activity" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base mb-2">Trace Environmental & Heavy Metal Speciation</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Atomic spectroscopic analysis (AAS, ICP-AES) for trace heavy metal determination (Pb, Cd, As, Cr) across botanical extracts, agricultural runoff, and industrial wastewater matrices.
+          </p>
         </div>
 
-      </div>
-
-      <div class="mt-4 p-3 bg-brand-surface text-white rounded border border-slate-700">
-        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-200 items-center justify-between">
-          <span class="text-brand-cyan font-bold uppercase">Developed Skills:</span>
-          <span>Literature Evaluation</span>
-          <span>•</span>
-          <span>Method Comparison</span>
-          <span>•</span>
-          <span>Laboratory Calibration</span>
-          <span>•</span>
-          <span>OriginPro Analysis</span>
-          <span>•</span>
-          <span>LaTeX Documentation</span>
+        <!-- Fit 3 -->
+        <div class="p-6 rounded-xl border border-slate-200 bg-slate-50/50 hover:border-teal-300 hover:bg-white hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center mb-4">
+            <i data-lucide="cpu" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base mb-2">Electrochemical Sensors & Material Characterization</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Exploring potentiometric sensors, electrode surface modifications, and coupling computational chemistry (DFT modeling) to rationalize structure-performance relationships.
+          </p>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ==================== ALL ACADEMIC PRESENTATIONS & SEMINARS ==================== -->
-  <section id="seminars" class="py-10 bg-white border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="max-w-3xl mb-5">
-        <h2 class="text-[11px] font-mono uppercase tracking-widest text-brand-teal font-semibold">Undergraduate Seminars & Projects</h2>
-        <p class="text-xl font-bold text-slate-900 tracking-tight mt-0.5">Academic Presentations & Assignments</p>
-        <p class="text-xs text-slate-600 mt-1 font-mono">
-          Comprehensive list of oral seminars, theoretical slide decks, and coursework research projects delivered during BS studies.
-        </p>
+  <!-- SECTION 2: THESIS & REPRESENTATIVE DATA (FIGURES OF MERIT) -->
+  <section id="thesis" class="py-16 bg-slate-50 border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-teal-700 font-bold mb-2">Undergraduate Thesis</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Primary Research & Analytical Performance</h3>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
         
-        <!-- Presentation 1 -->
-        <div class="p-3.5 rounded bg-slate-50 border border-slate-200">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-blue-100 text-brand-navy font-semibold">Atomic Spectroscopy</span>
-            <span class="text-[10px] font-mono text-slate-400">Nov 2025</span>
+        <!-- Left: Thesis Overview & Bench Workflows -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-2">
+              <span>Thesis Duration: Jan – May 2026</span>
+              <span class="text-teal-700 font-semibold">Completed</span>
+            </div>
+            <h4 class="text-lg font-bold text-slate-900 mb-3 leading-snug">
+              "A Comprehensive Review and Analytical Evaluation of Chromatographic and Spectroscopic Methods for Heavy Metals and Bioactive Compounds in Local Medicinal Plant Extracts"
+            </h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Conducted systematic evaluation and hands-on calibration of analytical figures of merit comparing HPLC, TLC, AAS, and UV-Vis spectrophotometry across botanical matrices.
+            </p>
+
+            <div class="space-y-3 pt-3 border-t border-slate-100 text-xs">
+              <h5 class="font-bold text-slate-800 uppercase tracking-wider font-mono">Bench Workflows Executed:</h5>
+              <ul class="space-y-2 text-slate-600">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-600 shrink-0 mt-0.5"></i>
+                  <span><strong>HPLC Handling:</strong> Mobile phase degassing (ultrasonic/vacuum), isocratic/gradient solvent mixing, 0.45 µm nylon membrane filtration, C18 column equilibration, and baseline stabilization.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-600 shrink-0 mt-0.5"></i>
+                  <span><strong>Sample Prep:</strong> Hot-plate wet acid digestion ($\text{HNO}_3 / \text{HClO}_4$) for organic matrix destruction in plant samples prior to AAS analysis.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-600 shrink-0 mt-0.5"></i>
+                  <span><strong>Quantitation:</strong> Multi-point calibration curves, standard addition method for matrix effect mitigation, calculation of LOD ($3.3 \sigma / S$) and LOQ ($10 \sigma / S$).</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <h3 class="text-xs font-bold text-slate-900 mt-1.5">Direct Coupled Plasma (DCP) Spectroscopy</h3>
-          <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
-            Delivered technical presentation on DCP plasma generation, electrode configurations, optical emission mechanisms, and multi-element excitation.
-          </p>
         </div>
 
-        <!-- Presentation 2 -->
-        <div class="p-3.5 rounded bg-slate-50 border border-slate-200">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-blue-100 text-brand-navy font-semibold">Instrumental Analysis</span>
-            <span class="text-[10px] font-mono text-slate-400">Nov 2025</span>
+        <!-- Right: Representative Analytical Calibration Sample -->
+        <div class="lg:col-span-5">
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <span class="text-xs font-mono uppercase font-bold text-slate-700">Representative Data Quality</span>
+              <span class="text-[11px] font-mono bg-slate-100 px-2 py-0.5 rounded text-slate-600">OriginPro Plotted</span>
+            </div>
+
+            <!-- Visual Calibration Curve Representation -->
+            <div class="bg-slate-900 rounded-xl p-4 text-white font-mono text-xs relative overflow-hidden">
+              <div class="flex justify-between items-center text-[11px] text-teal-400 mb-2 border-b border-slate-800 pb-2">
+                <span>Standard Calibration Linearity</span>
+                <span>λ = 254 nm / AAS</span>
+              </div>
+              
+              <!-- SVG Mini Plot -->
+              <svg viewBox="0 0 300 150" class="w-full h-36 stroke-current">
+                <!-- Grid -->
+                <line x1="30" y1="20" x2="30" y2="130" stroke="#334155" stroke-width="1"/>
+                <line x1="30" y1="130" x2="280" y2="130" stroke="#334155" stroke-width="1"/>
+                <line x1="30" y1="80" x2="280" y2="80" stroke="#1e293b" stroke-width="1" stroke-dasharray="2,2"/>
+                <line x1="150" y1="20" x2="150" y2="130" stroke="#1e293b" stroke-width="1" stroke-dasharray="2,2"/>
+
+                <!-- Regression Line -->
+                <line x1="45" y1="120" x2="265" y2="35" stroke="#14b8a6" stroke-width="2"/>
+
+                <!-- Data Points (Circles) -->
+                <circle cx="45" cy="120" r="3.5" fill="#f59e0b" stroke="#ffffff" stroke-width="1"/>
+                <circle cx="95" cy="101" r="3.5" fill="#f59e0b" stroke="#ffffff" stroke-width="1"/>
+                <circle cx="150" cy="80" r="3.5" fill="#f59e0b" stroke="#ffffff" stroke-width="1"/>
+                <circle cx="205" cy="58" r="3.5" fill="#f59e0b" stroke="#ffffff" stroke-width="1"/>
+                <circle cx="265" cy="35" r="3.5" fill="#f59e0b" stroke="#ffffff" stroke-width="1"/>
+              </svg>
+
+              <div class="grid grid-cols-2 gap-2 text-[10px] bg-slate-800/80 p-2.5 rounded-lg border border-slate-700/60 mt-2">
+                <div>Equation: <span class="text-teal-300">y = 0.0482x + 0.0012</span></div>
+                <div>Linear Fit: <span class="text-teal-300">R² = 0.9998</span></div>
+                <div>Linear Range: <span class="text-slate-300">0.5 – 50.0 mg/L</span></div>
+                <div>RSD (Precision): <span class="text-teal-300">&lt; 1.8%</span></div>
+              </div>
+            </div>
+
+            <p class="text-[11px] text-slate-500 leading-tight italic">
+              Demonstrates compliance with ICH Q2(R1) guidelines for linearity, repeatability, and standard addition recovery validation.
+            </p>
           </div>
-          <h3 class="text-xs font-bold text-slate-900 mt-1.5">ICP Atomic Emission Spectrophotometry (ICP-AES)</h3>
-          <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
-            Seminar review covering high-frequency induction torch design, argon plasma temperature zones, sample nebulization, and trace multi-elemental analysis.
-          </p>
         </div>
 
-        <!-- Presentation 3 -->
-        <div class="p-3.5 rounded bg-slate-50 border border-slate-200">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-teal-100 text-teal-900 font-semibold">Separation Science</span>
-            <span class="text-[10px] font-mono text-slate-400">Nov 2025 / Jan 2026</span>
-          </div>
-          <h3 class="text-xs font-bold text-slate-900 mt-1.5">Modes of Electrophoresis & Supporting Media</h3>
-          <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
-            Evaluated zone/capillary electrophoresis, supporting media (agarose, polyacrylamide gels), buffer systems, and mobility factors for biomolecule separation.
-          </p>
-        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Presentation 4 -->
-        <div class="p-3.5 rounded bg-slate-50 border border-slate-200">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-900 font-semibold">Environmental Protection</span>
-            <span class="text-[10px] font-mono text-slate-400">Nov 2025</span>
-          </div>
-          <h3 class="text-xs font-bold text-slate-900 mt-1.5">Industrial Waste Control & Monitoring</h3>
-          <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
-            Coursework presentation on chemical treatment standards for industrial effluents, environmental pollution mitigation, and waste minimization strategies.
-          </p>
-        </div>
+  <!-- SECTION 3: INSTRUMENTAL & TECHNICAL COMPETENCE (CLEAR DIVISION) -->
+  <section id="skills" class="py-16 bg-white border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-teal-700 font-bold mb-2">Technical Rigor</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Instrumental & Method Competencies</h3>
+        <p class="text-slate-600 text-sm mt-2">Distinction between direct bench operation and theoretical coursework mastery:</p>
+      </div>
 
-        <!-- Presentation 5 -->
-        <div class="p-3.5 rounded bg-slate-50 border border-slate-200">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-cyan-100 text-cyan-900 font-semibold">Electrochemistry</span>
-            <span class="text-[10px] font-mono text-slate-400">Dec 2025</span>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Hands-on Bench Execution -->
+        <div class="bg-teal-50/40 border border-teal-200/80 rounded-2xl p-6 sm:p-7 space-y-4">
+          <div class="flex items-center gap-2 text-teal-900 font-bold text-base">
+            <i data-lucide="check-circle" class="w-5 h-5 text-teal-700"></i>
+            <h4>Hands-On Laboratory Operation</h4>
           </div>
-          <h3 class="text-xs font-bold text-slate-900 mt-1.5">Electrochemical Electrode Types & Potentiometry</h3>
-          <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
-            Detailed breakdown of glass pH indicator electrodes, saturated calomel reference electrodes (SCE), and potentiometric analytical calibration.
+          <p class="text-xs text-slate-600">
+            Instruments independently operated, calibrated, and maintained during undergraduate research:
           </p>
-        </div>
-
-        <!-- Presentation 6 -->
-        <div class="p-3.5 rounded bg-slate-50 border border-slate-200">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-purple-100 text-purple-900 font-semibold">Biochemical Processes</span>
-            <span class="text-[10px] font-mono text-slate-400">Dec 2025</span>
-          </div>
-          <h3 class="text-xs font-bold text-slate-900 mt-1.5">Industrial Fermentation Processes</h3>
-          <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
-            Academic presentation covering bioreactor aeration/temperature controls, downstream separation, and microbial bio-production kinetics.
-          </p>
-        </div>
-
-        <!-- Presentation 7 -->
-        <div class="p-3.5 rounded bg-slate-50 border border-slate-200">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-amber-100 text-amber-900 font-semibold">Bioanalytical Studies</span>
-            <span class="text-[10px] font-mono text-slate-400">March 2026</span>
-          </div>
-          <h3 class="text-xs font-bold text-slate-900 mt-1.5">Drug Administration & Aquaculture Delivery</h3>
-          <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
-            Study notes and presentation covering pharmacokinetics across systemic administration routes and aquatic bath medication treatment delivery.
-          </p>
-        </div>
-
-        <!-- Presentation 8 -->
-        <div class="p-3.5 rounded bg-slate-50 border border-slate-200">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-rose-100 text-rose-900 font-semibold">Applied QC</span>
-            <span class="text-[10px] font-mono text-slate-400">April 2026</span>
-          </div>
-          <h3 class="text-xs font-bold text-slate-900 mt-1.5">Shampoo Surfactants & Cosmetic Safety Testing</h3>
-          <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
-            Academic assignment reviewing ionic/amphoteric surfactant classification, foaming mechanics, and analytical product safety compliance tests.
-          </p>
-        </div>
-
-        <!-- Presentation 9 -->
-        <div class="p-3.5 rounded bg-slate-50 border border-slate-200">
-          <div class="flex items-center justify-between">
-            <span class="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-indigo-100 text-indigo-900 font-semibold">Computational Chemistry</span>
-            <span class="text-[10px] font-mono text-slate-400">ICBBB Conf</span>
-          </div>
-          <h3 class="text-xs font-bold text-slate-900 mt-1.5">DFT-Based Non-Fullerene Solar Cell Modeling</h3>
-          <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
-            Conference poster presentation on computational structure-property modeling for asymmetric non-fullerene organic solar cell
+          <ul class="space-y-2.5 text-xs text-slate-700">
+            <li class="bg-white p-3 rounded-lg border border-teal-100 flex items-start gap-2 shadow-xs">
+              <span class="font-bold text-teal-800">HPLC (C18 RP):</span>
+              <span>Degassing, isocratic/gradient solvent prep, filtration, column wash, peak integration.</span>
+            </li>
+            <li class="bg-white p-3 rounded-lg border border-teal-100 flex items-start gap-2 shad
